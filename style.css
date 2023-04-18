@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Righteous&display=swap');
+
+html {
+    scroll-behavior:smooth;
+}
+
+
+body {
+    font-family: 'Righteous', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a {
+    text-decoration: none;
+    color: rgb(227, 227, 240);
+}
+/* ********************** NAVBAR **************** */
+nav {
+    overflow: hidden;
+    background-color: rgb(10, 10, 42);
+    position: fixed;
+    width: 100%;
+    opacity: 20.5; 
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 16px 12px;
+}
+#logo {
+    font-family:'Caveat', cursive;
+    font-weight: bold;
+    float: left;
+}
+/* ***********IMAGE PRINCIPALE ******** */
+#imagePrincipale {
+    padding-top: 110px;
+    background: url(Images/ImagePrincipale.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+h1{
+    font-family:'Caveat', cursive;
+    text-align: center;
+    color: rgb(225, 220, 220); 
+    font-size: 6em;
+    margin-top: 100px; 
+    text-shadow: 1px 3px 2px rgb(12, 10, 10);
+
+}
+
+#premierTrait {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    box-shadow: 1px 3px 2px;
+
+}
+h3 {
+    text-align: center;
+    color: rgb(239, 240, 241);
+    font-size: 3em;
+    text-shadow: 1px 3px 2px rgb(33, 65, 73);
+}
+/* ********* PRESENTATION ********* */
+#présentation {
+    background-color: rgb(10, 10, 25);
+    padding: 10px 0px 100px 0px;
+}
+#présentation h2 {
+    color: rgb(217, 252, 218); 
+}
+#textIntro {
+    padding: 0px 20%;
+    text-align: center;
+    color:rgb(252, 223, 228); 
+}
+#prestations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.imagesPrestations h4 {
+    font-family:'Caveat', cursive ;
+    color:rgb(207, 223, 239);
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300;
+}
+.imagesPrestations img {
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 4px whitesmoke;
+}
+.imagesPrestations img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.4s ease-in
+}
+
+/* ******* DECOUVERTE ******* */
+#tourisme {
+    height: 1400px;
+    background-color: rgb(10, 10, 25);
+    padding: 1px 2%;
+}
+#tourisme h2 {
+    padding-top: 60px;
+    color: bisque;
+}
+#TourEiffel {
+    background: url(Images/TourEiffel.jpg);
+}
+#Musée {
+    background: url(Images/Louvre.jpg);
+}
+#Jardin {
+    background: url(Images/Jardin.jpg);
+}
+#Basilique {
+    background: url(Images/Basilique.jpg);
+}
+#tourisme li {
+    margin: 65px 100px 0 100px;
+    height: 300px;
+    width: 55%;
+    max-width: 200px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px plum;
+}
+#tourisme p {
+    height: 45px;
+    width: 235px;
+    background-color: rgb(254, 224, 240);
+    float: right;
+    margin: 50px -200px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 4px 4px 0 1px rgb(209, 155, 244);
+}
+#tourisme #Musée, #tourisme #Basilique {
+    float: right;
+}
+#Musée p, #Basilique p {
+    float: left;
+    background-color: rgb(254, 224, 240);
+    margin-left: -200px;
+    box-shadow: -4px 4px 0 1px rgb(185, 199, 247);
+}
+/* ************** FOOTER ********** */
+footer {
+    background-color: rgb(251, 217, 223);
+    color: rgb(93, 92, 92);
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10 px; 
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Righteous';
+    border-radius: 8px;
+}
+textarea {
+    height: 120px;
+}
+button {
+    background-color: rgb(93, 92, 92);
+    color:rgb(251, 217, 223)
+}
+button:hover {
+    background-color: rgb(2, 92, 17);
+    color: rgb(251, 217, 223);
+    cursor: pointer;
+    transition:0.3s ease-out;
+}
+#deuxiemeTrait {
+    height: 1px;
+    width: 75%;
+    background-color: rgb(2, 12, 21);
+    margin: 60px auto;
+}
+#copyrightEtIcons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+#copyright {
+    width: 50%;
+    text-align: left;
+    color: rgb(2, 12, 21);
+}
+#icons {
+    width: 50%;
+    text-align: right;
+}
+#icons a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.3em;
+    color: rgb(2, 12, 21);
+}
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s; 
+}
