@@ -72,6 +72,7 @@ h1{
     width: 25%;
     margin: -3px auto;
     box-shadow: 1px 3px 2px;
+    background-color: rgb(87, 157, 182);
 
 }
 h3 {
@@ -119,53 +120,37 @@ h3 {
 
 /* ******* DECOUVERTE ******* */
 #tourisme {
-    height: 1400px;
     background-color: rgb(10, 10, 25);
-    padding: 1px 2%;
+    padding: 10px 0px 100px 0px;
 }
 #tourisme h2 {
-    padding-top: 60px;
-    color: bisque;
+    color: rgb(217, 252, 218); 
 }
-#TourEiffel {
-    background: url(Images/TourEiffel.jpg);
+#Decouverte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
 }
-#Musée {
-    background: url(Images/Louvre.jpg);
-}
-#Jardin {
-    background: url(Images/Jardin.jpg);
-}
-#Basilique {
-    background: url(Images/Basilique.jpg);
-}
-#tourisme li {
-    margin: 65px 100px 0 100px;
-    height: 300px;
-    width: 55%;
-    max-width: 200px;
-    float: left;
-    box-shadow: 6px 6px 28px -1px plum;
-}
-#tourisme p {
-    height: 45px;
-    width: 235px;
-    background-color: rgb(254, 224, 240);
-    float: right;
-    margin: 50px -200px 0 0;
-    font-size: 1.5em;
+.imagesParis h4 {
+    font-family:'Caveat', cursive ;
+    color:rgb(171, 181, 190);
     text-align: center;
-    padding-top: 15px;
-    box-shadow: 4px 4px 0 1px rgb(209, 155, 244);
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300;
+    background-color: rgb(43, 4, 44);
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 4px rgb(43, 4, 44);
 }
-#tourisme #Musée, #tourisme #Basilique {
-    float: right;
+.imagesParis img {
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 4px whitesmoke;
 }
-#Musée p, #Basilique p {
-    float: left;
-    background-color: rgb(254, 224, 240);
-    margin-left: -200px;
-    box-shadow: -4px 4px 0 1px rgb(185, 199, 247);
+.imagesParis img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.4s ease-in
 }
 /* ************** FOOTER ********** */
 footer {
