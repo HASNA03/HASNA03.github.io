@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Concert+One&family=Gluten&family=Inconsolata&family=Overlock&family=Reenie+Beanie&family=Righteous&family=Short+Stack&display=swap');/* différentes polices d'écriture */
+html { /* langage code */
+    scroll-behavior:smooth; /* comportement du curseur */
+}
+/*Base du site - Header */
+body { /* corps du site */
+    font-family: 'Short Stack', cursive;/* Police */
+    padding: 0; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément (cf. les boîtes CSS). Elle synthétise padding-top , padding-right , padding-bottom , padding-left */
+    margin: 0; /* Marge de base */
+    background-color: rgb( 250 , 220 , 208);/* Couleur arrière plan de base */
+}
+
+nav { /* barre de navigation */
+    text-align: center; /* centrer le texte du nav */
+    font-size: 20px; /* taille du texte en pixels */
+}
+ul { /* espace de la liste non ordonnée */
+    display: flex; /* espace affichage flexible du menu */
+    justify-content: space-around; /* espace autour du menu */
+}
+a { /* comportement redirection */
+    color: rgb( 109 , 7 , 26);  /* couleur du texte de la balise */
+    text-decoration: none;  /* retirer la décoration par défaut de la balise */
+    font-weight: bold; /* Texte en gras */
+}
+nav li { /* liste figurant sur la barre de navigation */
+    display: inline;  /* espace affichage ligne */
+    list-style: none; /* retirer la décoration par défaut de la balise */
+    font-family: 'Short Stack', cursive; /* Police */
+}
+/* Fin Base du site -  Header */
+
+/* Début section photo */
+.Photo{ /* Classe photo */
+    padding-top: 300px; /* Création d'un espace en haut de la section */ 
+    width: 100%; /* largeur % */
+    background: url(Photo/avatar.jpg) no-repeat 50% 50%; /* Arrière plan image */
+    background-size: cover; /* Arrière plan taille */
+}
+.Photo h3{ /* texte en h3 section photo */
+    margin-right: 3%; /* Marge droite */
+    font-family: 'Bruno Ace', cursive; /* Police */
+    text-align: end; /* centrer le texte */
+    color:rgb( 109 , 7 , 26); /* colorer le texte */
+    font-size: 2em;/* définit la taille de fonte utilisée pour le texte (taille du texte) */
+    font-weight: bold; /* Texte en gras */
+}
+.Photo h5{ /* texte en h5 section photo */
+    margin-right: 3%; /* Marge */
+    font-family: 'Bruno Ace', cursive; /* Police */
+    text-align: end; /* centrer le texte */
+    color:rgb( 109 , 7 , 26); /* colorer le texte */
+    font-size: 1em;/* définit la taille de fonte utilisée pour le texte (taille du texte) */
+    font-weight: bold; /* Texte en gras */
+}
+.row-presentation2 h5:hover{ /* Avec Hover, la propriété qu'on donne au lien ne s'appliquera que quand on  survolera l'adresse mail dans le site avec la souris */
+    color: rgb( 72 , 114 , 57); /* Couleur du texte survolé*/
+    font-weight: bold; /* Texte en gras */
+    text-decoration: underline;/* soulignage */
+}
+.fa-fa-file-pdf-o:hover{ /* Avec Hover, la propriété qu'on donne au lien ne s'appliquera que quand on survolera l'adresse mail dans le site avec la souris */
+    color: rgb( 72 , 114 , 57); /* Couleur du texte survolé*/
+    font-weight: bold; /* Texte en gras */
+    text-decoration: underline; /* soulignage */
+}
+.row-presentation2 {
+    padding-bottom: 2%;
+    text-decoration: underline;/* soulignage */
+}
+/* Fin section photo */
+
+/* Début section Consoneo */
+.consoneo{ /* classe consoneo */
+    padding-top: 1%;/* Création d'un espace en haut de la section */
+    padding-bottom: 2%; /* Création d'un espace en bas de la section */
+}
+.consoneo h2{ /* Paramétrage texte en h2 section consoneo*/
+    text-align: center; /* Alignement du texte */
+    font-family: 'Gluten', cursive; /* Police texte */
+    color:rgb( 109 , 7 , 26); /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 25px; /* taille du texte en pixels*/
+}
+.parcours{ /* section parcours */
+    max-width: 800px; /* largeur max % */
+    margin: 2px auto 100px auto; /* Marge */
+    padding: 40px 30px 100px 30px; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background-size: cover; /* Arrière plan taille */
+    border-radius: 8px; /* permet de définir des coins arrondis pour la bordure d'un élément */
+    background: url("Photo/fond.avif") no-repeat fixed; /* arrière plan de la section */
+    box-shadow: -1px -1px 8px rgb(223, 153, 153);/* ajoute des ombres à la boîte d'un élément via une liste d'ombres séparées par des virgules */
+}
+.parcours h3{ /* paramétrage texte en h3 section parcours */
+    font-size: 2.5em;/* définit la taille de fonte utilisée pour le texte (taille du texte) */
+    padding-bottom: 30px; /* Création d'un espace en bas de la section */
+    font-family: 'Bruno Ace', cursive; /* Police */
+    font-weight: bold; /* gras */
+    color:rgb( 115 , 52 , 39); /* couleur */
+}
+.parcours h4{ /* paramétrage texte en h4 section parcours */
+    font-size: 1.6em;/* définit la taille de fonte utilisée pour le texte (taille du texte) */
+    color: 	rgb( 161 , 43 , 0); /* Couleur */
+    margin-left: 2px;/* Marge */
+    text-decoration: underline; /* Souligner */
+}
+.parcours h6{ /* paramétrage texte en h6 section parcours */
+    font-size: 1.1em;/* définit la taille de fonte utilisée pour le texte (taille du texte) */
+    color: 	rgb( 186 , 44 , 50); /* Couleur */
+    margin-left: 20px;/* Marge */
+    font-style: italic; /* style police texte */
+    font-family: 'Inconsolata', monospace; /* Police */
+}
+.parcours p{ /* paramétrage texte en paragraphe section parcours */
+    line-height: 2.1em;
+    font-family: 'Inonsolata', monospace; /* Police */
+    color:rgb( 161 , 88 , 33); /* couleur */
+    font-weight: bolder;
+}
+.timeline{ /* section timeline */
+    border-top: 3px solid; /* bordure du haut */
+    border-image: linear-gradient(to right, rgb(112, 26, 68), rgb(236, 126, 126)); /* borudres image */
+    border-image-slice: 1; /* bordure image tranche */
+    margin: 0; /* Marge */
+    padding: 40px; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    position:relative; /* position de la timeline */
+}
+.timeline:nth-child(1):after{ /* cibler un élément qui est le premier élément fils 1 par rapport à son élément parent */
+    color:rgb( 119 , 26 , 43); /* définit la taille de fonte utilisée pour le texte (taille du texte) */
+    position: absolute; /* position de la timeline */
+    top: -10; /* emplacmeent haut */
+    right: -10px; /* emplacement droite */
+    box-sizing: content-box !important; /* façon dont la hauteur et la largeur totale d'un élément est calculée */
+}
+.timeline:nth-child(1){ /* élément fils 1 de la timeline */
+    border-bottom: 3px solid; /* borudre du dessous */
+    border-top: none; /* bordure du dessus */
+    width: 80%; /* largeur % */
+}
+.timeline:nth-child(2){ /* élément fils 2 de la timeline */
+    border-top: none; /* bordure du dessus */
+}
+.timeline:nth-child(odd){ /* odd (impair) Permettra de cibler un élément si celui-ci fait partie des trois premiers fils d'un parent et que c'est également un élément span */
+    border-right: 3px solid; /* bordure de droite /*
+    padding-left: 0; /* Création d'un espace à gauche de la section */
+}
+.timeline:nth-child(even){ /* even (pair) Permettra de cibler un élément si celui-ci fait partie des trois premiers fils d'un parent et que c'est également un élément span */
+    border-left: 3px solid; /* bordure gauche */
+    padding-right: 0; /* Création d'un espace à droite de la section */
+}
+/* Fin section Consoneo */
+
+/* Début section études */
+.formation{ /* classe etudes */
+    background-image: url("Photo/fond2.avif"); /* arrière plan de la section */
+    padding-top: 1%;/* Création d'un espace en haut de la section */
+    padding-bottom: 5%; /* Création d'un espace en bas de la section */
+}
+.formation h2{ /* Paramétrage texte en h2 */
+    text-align: center; /* Alignement du texte */
+    font-family: 'Gluten', cursive; /* Police texte */
+    color:rgb( 109 , 7 , 26); /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 25px; /* taille du texte en pixels*/
+}
+.etudesecole h3{ /* Paramétrage texte en h3*/
+    font-family: 'Righteous', cursive;/* Police */
+    text-align: center; /* Alignement du texte */
+    font-size: 20px; /* taille du texte en pixels*/
+    font-weight: lighter; 
+    color:	rgb( 144 , 66 , 49); /* couleur */
+
+}
+.etudesecole h4{ /* Paramétrage texte en h4*/
+    text-align: center; /* Alignement du texte */
+    font-size: 20px; /* taille du texte en pixels*/
+    color:	rgb( 152 , 90 , 96); /* couleur */
+}
+.etudesecole{ /* classe des etudes écoles */
+    font-family: 'Short Stack', cursive;/* Police */
+    margin-left: 23%; /* Ecarter les blocs vers la droite */
+    color:	rgb( 75 , 36 , 16) /* Couleur du texte */
+}
+.ecole{ /* classe des blocs écoles */
+    border-radius: 30px; /* bordure arrondi % */
+    width: 70%; /* Largeur des blocs */
+    height: 20%; /* Hauteur des blocs */
+    background-color: rgb( 238 , 216 , 207); /* Couleur arrière plan des blocs */
+    box-shadow: 5px 5px rgb( 79 , 64 , 57); /* ombre contour + couleur % */   
+    align-items: center; /* Alignement des blocs */
+}
+.ecole:hover{ /* Survol image */
+    transform: scale(1.05); /* echelle de l'image */
+    transition: 0.5s ease-out; /* opacité transition */
+}
+.ecole img{ /* Images (logos) figurant dans les blocs écoles */
+    margin-left: 43%; /* Centrer les logos */
+    width: 15%; /* Largeur des logos */
+    height: 20%; /* Hauteur des logos */
+    border-radius: 10px; /* bordure arrondi % */
+    box-shadow: 5px 5px rgb(41, 4, 13); /* ombre contour + couleur % */   
+}
+/* Fin section études */
+
+/* Début Section Compétences */
+.competences{ /* classe etudes */
+    padding-top: 1%;/* Création d'un espace en haut de la section */
+    padding-bottom: 5%; /* Création d'un espace en bas de la section */
+}
+.competences h2{ /* Paramétrage texte en h2 */
+    text-align: center; /* Alignement du texte */
+    font-family: 'Gluten', cursive; /* Police texte */
+    color:rgb( 109 , 7 , 26); /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 25px; /* taille du texte en pixels*/
+}
+.competences h3{ /* Paramétrage texte en h2 */
+    font-family: 'Concert One', cursive; /* Police */
+    color:	rgb( 157 , 62 , 12); /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 25px; /* taille du texte en pixels*/
+    text-decoration: underline; /* soulignage */
+}
+.langages{ /* paramétrage section langage */
+    margin-top: 0; /* Marge */
+    padding: 50px 100px 100px 100px; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background-color: whitesmoke; /* Arrière plan */
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%); /* propriété CSS au moyen de laquelle une section d'élément CSS peut être définie. Les clip-paths permettent d'afficher des éléments dans de nombreuses formes géométriques différentes sans que le fichier graphique ne soit préalablement modifié. */
+    font-family: 'Bruno Ace', cursive;/* Police */
+}
+.langages.bar{ /* paramétrage barres de langage */
+    padding: 10px 0 4px 0; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    letter-spacing: 0.1em;
+}
+.outils{ /* paramétrage outils */
+    margin-top: 0;/* Marge */
+    padding: 50px 100px 100px 100px; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background-color: whitesmoke;/* Arrière plan couleur */
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%); /* propriété CSS au moyen de laquelle une section d'élément CSS peut être définie. Les clip-paths permettent d'afficher des éléments dans de nombreuses formes géométriques différentes sans que le fichier graphique ne soit préalablement modifié. */
+    font-family: 'Bruno Ace', cursive; /* police */
+}
+.outils.bar{ /* paramétrage barres de outils */
+    padding: 10px 0 4px 0; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    letter-spacing: 0.1em;
+}
+.sport{ /* paramétrage sport */
+    margin-top: 0;/* Marge */
+    padding: 50px 100px 100px 100px; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background-color: whitesmoke; /* couleur arrière plan */
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%); /* propriété CSS au moyen de laquelle une section d'élément CSS peut être définie. Les clip-paths permettent d'afficher des éléments dans de nombreuses formes géométriques différentes sans que le fichier graphique ne soit préalablement modifié. */
+    font-family: 'Bruno Ace', cursive;/* Police */
+}
+.sport.bar{ /* paramétrage barres de outils */
+    padding: 10px 0 4px 0; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    letter-spacing: 0.1em;
+}
+.centresinterets{ /* paramétrage centres d'intérets */
+    margin-top: 0; /* Marge */
+    padding: 50px 100px 100px 100px;/* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background-color: whitesmoke;/* Arrière plan couleur */
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%); /* propriété CSS au moyen de laquelle une section d'élément CSS peut être définie. Les clip-paths permettent d'afficher des éléments dans de nombreuses formes géométriques différentes sans que le fichier graphique ne soit préalablement modifié. */
+    font-family: 'Bruno Ace', cursive; /* Police */
+}
+.centresinterets.bar{ /* paramétrage barres de centres d'intérêts */
+    padding: 10px 0 4px 0; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    letter-spacing: 0.1em; /* Espace entre les lettres */
+}
+.autrescompetences h1{ /* classe etudes */
+    font-family: 'Gluten', cursive;/* Police */
+    margin-right: 12%; /* Ecarter vers la droite */
+    text-align:center; /* Alignement du texte */
+    color: rgb( 109 , 7 , 26); /* colorer le texte */
+    padding-top: 1%;/* Création d'un espace en haut de la section */
+    padding-bottom: 2%; /* Création d'un espace en bas de la section */
+}
+.autrescompetences{ /* paramétrage cautres compétences */
+    margin-top: 0; /* Marge */
+    padding: 50px 100px 100px 100px; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    background-color: whitesmoke; /* Arrière plan */
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%); /* propriété CSS au moyen de laquelle une section d'élément CSS peut être définie. Les clip-paths permettent d'afficher des éléments dans de nombreuses formes géométriques différentes sans que le fichier graphique ne soit préalablement modifié. */
+    font-family: 'Bruno Ace', cursive;/* Police */
+}
+.cloud{ /* paramètres du nuage */
+    text-align: center; /* Alignement du texte */
+    padding:40px 0; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    font-size: 1.2em; /* définit la taille de fonte utilisée pour le texte (taille du texte) */
+    text-transform: uppercase; /* transformation du texte en majuscules */
+    font-weight: bold; /* Texte en gras */
+    margin-right: 12%; /* Ecarter vers la droite */
+}
+/* Fin section  compétences */
+
+/* Début section expériences étudiantes */
+.experiencesetudiantes{ /* classe expériences pro etudiantes */
+    background-image: url("Photo/fond2.avif"); /* arrière plan de la section */
+    padding-top: 1%;/* Création d'un espace en haut de la section */
+    padding-bottom: 5%; /* Création d'un espace en bas de la section */
+}
+.experiencesetudiantes h2{ /* Paramétrage texte en h2 */
+    font-family: 'Gluten', cursive; /* Police */
+    text-align: center; /* Alignement du texte */
+    color:rgb( 109 , 7 , 26); /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 25px; /* taille du texte en pixels*/
+}
+.experiencesproetudiantes{ /* Paramétrage des blocs */
+    width: 70%; /* Largeur */
+    background-color: 	rgb( 232 , 198 , 176); /* Couleur arrière plan des blocs */
+    align-items: center; /* Alignement des éléments */
+    border-radius: 30px; /* bordure arrondi % */
+    height: 20%; /* Hauteur des blocs */
+    box-shadow: 5px 5px rgb( 79 , 64 , 57); /* ombre contour + couleur % */   
+}
+.experiencesproetudiantes h3{ /* Paramétrage texte en h3*/
+    font-family: 'Righteous', cursive; /* Police */
+    text-align: center; /* Alignement du texte */
+    color:rgb( 119 , 26 , 43); /* Couleur du texte */
+    font-size: 20px; /* taille du texte en pixels*/
+    font-weight: lighter;
+}
+.experiencesproetudiantes h4{ /* Paramétrage texte en h4*/
+    text-align: center; /* Alignement du texte */
+    color: 	rgb( 132 , 48 , 64);
+    font-size: 20px; /* taille du texte en pixels*/
+}
+.expcadre{ /* Classe permettant d'écarter les blocs */
+    margin-top: 2%; /* Espace haut des blocs */
+    margin-left: 23%; /* Décale les blocs vers la droite */
+}
+.experiencesproetudiantes:hover{ /* Survol image */
+    transform: scale(1.05); /* echelle de l'image */
+    transition: 0.5s ease-out; /* opacité transition */
+}
+.experiencesproetudiantes img{ /* Images des logos (classe du div) */
+    margin-left: 45%; /* Décale les images vers le centre des blocs */
+    width: 10%; /* Largeur */
+    height: 20%; /* Hauteur */
+    border-radius: 10px; /* bordure arrondi % */
+    box-shadow: 5px 5px rgb(41, 4, 13); /* ombre contour + couleur % */   
+}
+/* Fin section expériences étudiantes */
+
+/* Section Portfolio */
+.portfolio{ /* classe Portfolio */
+    background-image: url("Photo/fond.avif"); /* arrière plan de la section */
+    padding-top: 1%;/* Création d'un espace en haut de la section */
+    padding-bottom: 5%; /* Création d'un espace en bas de la section */
+}
+
+.img-container{ /*Classe contenu intérieur image */
+    height: 250px;/* Hauteur */
+    width: 90%;/* Largeur */
+    max-width: 500px; /* Largeur max */
+    overflow: hidden; /* Débordement*/
+    margin: 0 auto; /* Marge */
+    box-shadow: 1px 1px 10px black; /* Ombre */
+}
+.img-container img{ /*Classe contenu image */
+    position: relative; /* Positionnement image */
+    height: 100%; /* Hauteur */
+    margin: 0 auto; /* Marge */
+}
+.img-container:hover{ /* Survol image */
+    transform: scale(1.07); /* Permet d'agrandir l'échelle ou de réduire d'échelle d'un élément HTML */
+    transform-origin: 50% 50%; /* Permet de modifier l'origine du repère pour les opérations de transformation d'un élément */
+    filter: contrast (140%); /* Filtre */
+    transition: 0.4s ease-out; /* Transition */
+}
+.projet{ /* paramétrage de projet */
+    display: flex; /* Comportement affichage */
+}
+.portfolio h2{ /* Paramétrage texte en h2 */
+    text-align: center; /* Alignement du texte */
+    font-family: 'Gluten', cursive; /* Police texte */
+    color:rgb( 109 , 7 , 26); /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 25px; /* taille du texte en pixels*/
+}
+.portfolio h1{ /* Paramétrage texte en h1 */
+    text-align: left; /* Alignement du texte */
+    margin-left: 2%; /* Marge */
+    font-family: 'Gluten', cursive; /* Police texte */
+    color:rgb( 109 , 7 , 26); /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 25px; /* taille du texte en pixels*/
+    font-family: 'Bruno Ace', cursive; /* Police */
+}
+.legende img{ /* paramétrage de l'image légende */
+    width: 5%; /* Largeur des logos */
+    height: 10%; /* Hauteur des logos */
+}
+.legende p{ /* paramétrage de paragraphe légende */
+    max-width: 350p; /* Largeur max */
+    padding: 50px 0 0 20px; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    margin-left: 2%; /* Marge */
+    font-style: italic; /* style police texte legende */
+    color:rgb( 109 , 7 , 26); /* Couleur du texte */
+}
+.legende a{ /* paramétrage de l'attribu legende (à destination de  donc lien) */
+    padding: 16px 10px 10px 10px; /* propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    margin-top: 20px; /* Marge */
+    margin-right: 3%; /* Marge */
+    font-size: 1.1em;/* définit la taille de fonte utilisée pour le texte (taille du texte) */
+    float: right; /* indique qu'un élément doit être retiré du flux normal et doit être placé sur le côté droit ou sur le côté gauche de son conteneur. Le texte et les autres éléments en ligne (inline) entoureront alors l'élément flottant. */
+    border-radius: 3px; /* permet de définir des coins arrondis pour la bordure d'un élément */
+    background: rgb(251, 250, 250); /* Arrière plan */
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both; /* cf. notes */
+}
+@keyframes shadow-pop-tr{ /*cf. notes */
+    100%{
+        -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+                box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+        -webkit-transform: translateX(-8px) translateY(8px);
+                transform: translateX(-8px) translateY(8px);
+    }
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+}
+.portfolio h3{ /* Paramétrage texte en h3 */
+    margin-left: 2%; /* Marge */
+    text-align: left; /* Alignement du texte */
+    font-family: 'Gluten', cursive; /* Police texte */
+    color:rgb( 109 , 7 , 26); /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 25px; /* taille du texte en pixels*/
+    text-decoration: underline; /* soulignage */
+}
+.legende h5:hover{ /* Avec Hover, la propriété qu'on donne au lien ne s'appliquera que quand on  survolera l'adresse mail dans le site avec la souris */
+    color: rgb( 72 , 114 , 57); /* Couleur du texte survolé*/
+    font-weight: bold; /* Texte en gras */
+    text-decoration: underline;/* soulignage */
+}
+.fa-github:hover{ /* Avec Hover, la propriété qu'on donne au lien ne s'appliquera que quand on survolera l'adresse mail dans le site avec la souris */
+    color: rgb( 72 , 114 , 57); /* Couleur du texte survolé*/
+    font-weight: bold; /* Texte en gras */
+    text-decoration: underline; /* soulignage */
+}
+/* Section Portfolio */
+
+/* Début section contact */
+footer{ /* Selecteur footer */
+    display: flex; /* Permet d'avoir des élémens flexibles */
+    justify-content: center; /* Centrer les éléments */
+    text-align: center; /* Centrer le texte*/
+    flex-direction: column; /* Permet de créer une colonne (les éléments vont à la ligne */
+    color: 	rgb( 77 , 64 , 58);/* Couleur du texte*/
+    font-weight: bold; /* Texte en gras */
+}
+.mail:hover{ /* Avec Hover, la propriété qu'on donne au lien ne s'appliquera que quand on  survolera l'adresse mail dans le site avec la souris */
+    color: rgb( 72 , 114 , 57); /* Couleur du texte survolé*/
+    font-weight: bold; /* Texte en gras */
+    text-decoration: underline;/* Souligner */
+}
+.telephone:hover{ /* Avec Hover, la propriété qu'on donne au lien ne s'appliquera que quand on  survolera l'adresse mail dans le site avec la souris */
+    color: rgb( 72 , 114 , 57); /* Couleur du texte survolé*/
+    font-weight: bold; /* Texte en gras */
+    text-decoration: underline;
+}
+.fa-linkedin:hover{ /* Avec Hover, la propriété qu'on donne au lien ne s'appliquera que quand on  survolera l'adresse mail dans le site avec la souris */
+    color: rgb( 72 , 114 , 57); /* Couleur du texte survolé*/
+    font-weight: bold; /* Texte en gras */
+    text-decoration: underline; /* Souligner */
+}
+.copyright{
+    font-family: 'Overlock', cursive; /* Police */
+    display: flex; /* Permet d'avoir des élémens flexibles */
+    justify-content: center; /* Centrer les éléments */
+    text-align: center; /* Centrer le texte*/
+    flex-direction: column; /* Permet de créer une colonne (les éléments vont à la ligne */
+    color:rgb(149, 95, 57);/* Couleur du texte*/
+    font-weight: bold; /* Texte en gras */ 
+}
+.trait{
+    height: 1px; /* Hauteur trait */
+    width: 25%; /* Largeur */
+    background-color: rgb(38, 9, 9); /* Couleur arrière plan */
+    margin: 60px auto; /* Marge */
+}
+/* Fin section contact */
